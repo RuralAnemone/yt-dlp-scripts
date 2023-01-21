@@ -5,7 +5,7 @@ if [ ! -f ./todo ]; then 				# if todo does not exist
 	exit 1
 fi
 
-if [ $(cat ./todo) = "" ]; then
+if [ ! -s ./todo ]; then
 	echo "error 2: file 'todo' exists, but is empty"
 	exit 2
 fi
