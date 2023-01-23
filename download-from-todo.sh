@@ -21,7 +21,9 @@ read answer
 if [ $answer = "y" ] || [ $answer = "Y" ]; then
 	rm -f ./todo
 	touch ./todo
+	echo "done. (cleared todo)"
+else
+	echo "done. (kept todo)"
 fi
 
-echo "done."
 exit 0
