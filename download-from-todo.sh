@@ -2,12 +2,12 @@
 
 if [ ! -f ./todo ]; then 				# if todo does not exist
 	echo "error 1: can't find file 'todo'"
-	exit 1
+	exit
 fi
 
 if [ ! -s ./todo ]; then
 	echo "error 2: file 'todo' exists, but is empty"
-	exit 2
+	exit
 fi
 
 # -----
@@ -26,4 +26,4 @@ else
 	echo "done. (kept todo)"
 fi
 
-exit 0
+exit
